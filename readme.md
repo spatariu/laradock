@@ -14,8 +14,8 @@ so don't make a new project folder in order to avoid excessive subtrees
 > `git clone https://github.com/spatariu/laradock.git` 
 ###### Composer
 > if you choose to install via the composer you will need a functional php intallation (https://www.sitepoint.com/how-to-install-php-on-windows/), 
-also the `php.ini` should contain this externsion `extension=fileinfo` (if it is not there add it at the end of the file)
-> `composer create-project spatariu/laradock`
+also the `php.ini` should contain this externsion `extension=fileinfo` (if it is not there add it at the end of the file), when you are done with this 
+run `composer create-project spatariu/laradock`
 - Go to `laradock/laradock` subfolder and execute `docker-compose up -d nginx phpmyadmin` (it creates all the containers' links and also brings up 
 the additional required containers - php-fpm - mysql - workspace).
 - You can check if your containers are up by runnning `docker ps`, go to the workspace container to start interacting with your project 
