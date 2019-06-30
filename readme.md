@@ -10,9 +10,9 @@ Laravel Basic Auth also added.
 1. Enter the console and go to your desired installation location, keep in mind that cloning or composing will create a new folder 
 so don't make a new project folder in order to avoid excessive subtrees
 2. Get the files by following one of these two methods:
-### Git (easier)
+###### Git (easier)
 - `git clone https://github.com/spatariu/laradock.git` 
-### Composer
+###### Composer
 - if you choose to install via the composer you will need a functional php intallation (https://www.sitepoint.com/how-to-install-php-on-windows/), 
 also the `php.ini` should contain this externsion `extension=fileinfo` (if it is not there add it at the end of the file)
 - `composer create-project spatariu/laradock`
