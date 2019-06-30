@@ -10,12 +10,12 @@ Laravel Basic Auth also added.
 - enter the console and go to your desired installation location, keep in mind that cloning or composing will create a new folder 
 so don't make a new project folder in order to avoid excessive subtrees
 - get the files by following one of these two methods:
-    ###### Git (easier)
-`git clone https://github.com/spatariu/laradock.git` 
-    ###### Composer
-    If you choose to install via the composer you will need a functional php intallation (https://www.sitepoint.com/how-to-install-php-on-windows/), 
-also the `php.ini` should contain this externsion `extension=fileinfo` (if it is not there add it at the end of the file):
-`composer create-project spatariu/laradock`
+###### Git (easier)
+> `git clone https://github.com/spatariu/laradock.git` 
+###### Composer
+> if you choose to install via the composer you will need a functional php intallation (https://www.sitepoint.com/how-to-install-php-on-windows/), 
+also the `php.ini` should contain this externsion `extension=fileinfo` (if it is not there add it at the end of the file)
+> `composer create-project spatariu/laradock`
 - Go to `laradock/laradock` subfolder and execute `docker-compose up -d nginx phpmyadmin` (it creates all the containers' links and also brings up 
 the additional required containers - php-fpm - mysql - workspace).
 - You can check if your containers are up by runnning `docker ps`, go to the workspace container to start interacting with your project 
