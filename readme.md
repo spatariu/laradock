@@ -1,5 +1,5 @@
 ## Laradock
-Docker basic configuration with Nginx, Laravel, MySql and phpMyadmin containers tested. 
+Docker basic configuration with Nginx, Laravel, MySql and phpMyadmin containers. 
 Laravel Basic Auth also added.
     
 ## Prerequisites
@@ -21,6 +21,9 @@ the additional required containers - php-fpm - mysql - workspace).
 - check if your containers are up by runnning `docker ps`, go to the workspace container to start interacting with your project 
 with the following command: `docker exec -it laradock_workspace_1 bash` (if you have a different name for your workspace container type that one)
 - run `composer update` once you are inside the `workspace` container
+- there is a no support yet in phpmyadmin for the mysql8's new authentification `caching_sha2_password` so you have to delete the `.laradock` folder 
+at this step, if you are on Windows you will find it in the C:\Users\YourProfileName, on Linux in your logged in user's folder (`root` if you 
+logged in like that), rebuild the container with `docker-compose build --no-cache mysql` and restart the containers (down & up again)
 - now Laravel should be up and running on http://localhost:80 and phpMyadmin on http://localhost:8080/ (credentials mysql/root/root), if you are on
 a VPS replace `localhost` with your public IP
 - if you got any rights issues on Linux run `chmod -R 777 storage` and` chmod -R 777 bootstrap/cache`
