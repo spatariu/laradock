@@ -25,4 +25,16 @@ class HomeController extends Controller
     {
         return view('home');
     }
+    
+    /**
+     * Tests the application.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function test()
+    {
+        echo 'asd';
+        var_dump('test');
+        return view('welcome');
+    }
 }
